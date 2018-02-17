@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Game Engine Test</title>
+	<style>
+		*{margin:0;padding:0;}
+		html,body{
+			background-color: white;
+			overflow:hidden;
+			height: 100%;
+		}
+		#counter{
+			position: absolute;
+		}
+	</style>
+	
+</head>
+<body>
+	<canvas id="canvas">Welp, it doesn't look like your browser supports the smexy HTML5 Canvas. You should do something about that.</canvas>
+
+	<p id="counter">100</p>
+</body>
+	<!-- <script src="script.js"></script> -->
+	<!-- <script>(function(){var script=document.createElement('script');script.onload=function(){var stats=new Stats();document.body.appendChild(stats.dom);requestAnimationFrame(function loop(){stats.update();requestAnimationFrame(loop)});};script.src='//rawgit.com/mrdoob/stats.js/master/build/stats.min.js';document.head.appendChild(script);})()</script> -->
+	<script src="framework/Prototypes.js"></script>
+	<script src="framework/Vector2.js"></script>
+	<script src="framework/Segment.js"></script>
+	<script src="framework/Sprite.js"></script>
+	<script src="framework/GameObject.js"></script>
+
+	<script src="framework.js"></script>
+
+	<script src="main.js"></script>
+</html>
