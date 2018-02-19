@@ -63,5 +63,6 @@ var delta = Date.now() - lastRender;
 	hussain.update();
 	hussain.render(Context);
 
+	console.log(Input.SHIFT);
 	requestAnimationFrame(Render);
 }()

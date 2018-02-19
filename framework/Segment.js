@@ -41,8 +41,8 @@ class Segment{
 	//●--●--●
 	isWithin(vec2){return (vec2.isSame(this.start)||vec2.isSame(this.end)||this.isBetween(vec2))}
 
-	setInterpolate(){
-		//TODO
+	setInterpolate(tweenMode){
+		this.tweenMode = tweenMode;
 	}
 
 	next(step){
