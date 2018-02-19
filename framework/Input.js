@@ -17,8 +17,6 @@ class InputManger{
 		}
 	}
 
-	
-
 	setState(keyCode,state){
 		console.log(keyCode);
 		if(keyCode in this.specialChars)
@@ -34,19 +32,19 @@ document.documentElement.onkeydown=(e)=>{
 	if (e.which||event.keyCode == 18)
 		e.preventDefault();
 	Input.setState(e.which||event.keyCode,true);
-};
+}
 
 document.documentElement.onkeyup=(e)=>{
 	Input.setState(e.which||event.keyCode,false);
-};
+}
 
 document.documentElement.onmousedown=(e)=>{
 	Input.mouseBtns[e.button] = true;
-};
+}
 
 document.documentElement.onmouseup=(e)=>{
 	Input.mouseBtns[e.button] = false;
-};
+}
 
 document.documentElement.onmousemove=(e)=>{
 	Input.mousePos.x = e.clientX;

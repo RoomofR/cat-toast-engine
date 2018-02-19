@@ -12,7 +12,7 @@ class Segment{
 			this.start = arguments[0].duplicate();
 			this.angle = arguments[1];
 			this.distance = arguments[2];
-			this.end = this.start.from(this.angle,this.distance);
+			this.end = this.start.From(this.angle,this.distance);
 		}
 	}
 
@@ -27,7 +27,7 @@ class Segment{
 	}
 
 	///Origin is start
-	angleTo(vec){return Math.abs(this.angle - this.start.angle(vec))}
+	angleTo(vec){return Math.abs(this.angle - this.start.AngleTo(vec))}
 
 	//Check if vector is in line with segment if ray
 	isAligned(vec2){return this.crossProduct(vec2)==0}

@@ -1,6 +1,5 @@
 class GameObject{
 
-	//this.sprite
 	//this.collidors
 	//this.mask
 

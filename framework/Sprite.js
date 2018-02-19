@@ -34,13 +34,10 @@ class Sprite{
 
 	render(ctx){
 		ctx.clearRect(this.pos.x,this.pos.y,this.w/this.cols,this.h/this.rows);
-		//console.log((this.frameIndex%this.cols),((this.frameIndex-(this.frameIndex%this.cols))/this.cols));
-		//console.log(this.w/this.cols,this.h/this.rows);
-
 		ctx.drawImage(
 			this.img,
-			(this.frameIndex%this.cols)*this.w/this.cols,
-			((this.frameIndex-this.frameIndex%this.cols)/this.cols)*this.h/this.rows,
+			this.frameIndex%this.cols*this.w/this.cols,
+			(this.frameIndex-this.frameIndex%this.cols)/this.cols*this.h/this.rows,
 			this.w/this.cols,
 			this.h/this.rows,
 			this.pos.x,
